@@ -7,7 +7,8 @@ deploy:
   provider: releases
   api_key:
     secure: bFpi22qf2+RzAkG4h3Fc0Tp7k5ObKg0AWy8sRaPKHqH7NZdKPgAf25ICg72Zs2h4pbMjP4lgN4F01YFDsHsQgLQlDNgLyycgWYNZYqfLePqP1SsioQ+mpxZjQzDrP5xCJjTig/t6+qS7qO/onhC4HJ7XKk+eu+nP6xYRl/llf78DBCsySs3LbpA8FNzJ+Kv3ol5+QG1EEhFm7f3lEcelj4HCTefqfdO3FFyTRU2/dMDTrIxyAOusk8OpLgHi778WwKarM5g1UbGMontg40r2EsnuinzmQzMhwzDhcRMDyfHhMR0YDidGnFN2JskdnPcd5JM/QZMBwrHNaDgygd2W+hgAIfW1ikXcKXTMJBSh4Enej3pBz5F19RwRM3KvkuGK4TW7ZmF/esJaeAwRIHOZuwAd+FBbHlpb+e8DaQLcpr6MKnyiSqSrc73UQL33/+mmizeSTqWrvVhbRs0HccQnEy5oiMXDDTizRlnyqH8uAF6CS3BpEDSi9eH4MHe6Md7BTnitgcBMYnqKI0OsuBoubPZUaKMTIShL8sF2mAdxLvHsELMebBHb0NVEUWMAaHuQAiKxMIHO5VHeYgrnwTP05WUSRMhZTzYvmtVt9man6zKITJvBSbA0jbW7Ks8KCyCAO5fbukzWF8UbVoLds+Km5vXYRx4ZpGvxxzPp6eyR5JM=
-  file: build/libs/xlr-remotescript-taskpassword-plugin-1.0.0.jar
+  file_glob: true
+  file: build/libs/*
   skip_cleanup: true
   on:
     all_branches: true
